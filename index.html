@@ -8,15 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <title>Calculadora Js</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
   <div class="main">
-    <header class="header">
+    <header class="flex align-center justify-between">
       <h1>Calculadora</h1>
     </header>
     <input type="text" id="input">
     <div id="keys">
+      <button id="clear">C</button>
       <button class="charKey" data-value=" ( ">(</button>
       <button class="charKey" data-value=" ) ">)</button>
       <button class="charKey" data-value=" / ">/</button>
@@ -34,9 +36,12 @@
       <button class="charKey" data-value=" + ">+</button>
       <button class="charKey" data-value="0">0</button>
       <button class="charKey" data-value=" . ">.</button>
-      <button class="charKey" data-value=" % ">%</button>
+      <button class="charKey" data-value=" % ">mod</button>
+      <button id="equal">=</button>
     </div>
-    <input type="text" id="result" disabled>
+    <section class="flex align-center justify-between">
+      <input type="text" id="result" disabled>
+    </section>
   </div>
 </body>
 

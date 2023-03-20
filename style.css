@@ -19,7 +19,7 @@ body {
 }
 
 .main {
-  background-color: var(--border-color);
+  background-color: var(--bg-color);
   display: block;
   margin: 0 auto;
   max-width: 40rem;
@@ -27,7 +27,7 @@ body {
   position: relative;
 }
 
-.header {
+header {
   padding: 2rem 0;
 }
 
@@ -68,4 +68,30 @@ input {
 
 #keys button:hover {
   filter: brightness(0.8);
+}
+
+#result {
+  border-width: 2px 2px 2px 2px;
+  border-radius: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.error {
+  background-color: var(--error-color);
+}
+
+.sucess {
+  background-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
